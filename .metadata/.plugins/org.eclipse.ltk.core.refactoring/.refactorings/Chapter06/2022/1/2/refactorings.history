@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.yedam.java.example.myTV&apos; to &apos;TV&apos;&#x0D;&#x0A;- Original project: &apos;Chapter06&apos;&#x0D;&#x0A;- Original element: &apos;com.yedam.java.example.myTV&apos;&#x0D;&#x0A;- Renamed element: &apos;com.yedam.java.example.TV&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;myTV&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.yedam.java.example{myTV.java[myTV" matchStrategy="1" name="TV" qualified="false" references="true" similarDeclarations="false" stamp="1641280903647" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,34 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+<h3>계좌실명조회</h3>
+<div id="list"></div>
+<script>
+
+var url = "getRealName";
+$(function(){
+	$.ajax(url)
+	.done(function(result){
+		for(bank of result){
+			$("<div>").addClass("acc").data("usenum", bank.fintech_use_num)
+			.append( $("<span>").html(bank.fintech_use_num))
+			.append( $("<span>").html(bank.bank_name))
+			.append( $("<input>").val(bank.account_alias))
+			.append( $("<button>").html("변경").addClass("btnTrans"))
+			.append( $("<span>").html(bank.account_num_masked))
+			.appendTo("#list")
+		}
+	})
+
+
+</script>
+
+</body>
+</html>

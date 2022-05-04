@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.yedam.myserver.ResttemplateTest.java&apos; to &apos;RestTemplateTest.java&apos;&#x0D;&#x0A;- Original project: &apos;myserver&apos;&#x0D;&#x0A;- Original element: &apos;com.yedam.myserver.ResttemplateTest.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.yedam.myserver.RestTemplateTest.java&apos;" description="Rename compilation unit &apos;ResttemplateTest.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com.yedam.myserver{ResttemplateTest.java" name="RestTemplateTest.java" references="false" stamp="1651477760119" version="1.0"/>
+</session>

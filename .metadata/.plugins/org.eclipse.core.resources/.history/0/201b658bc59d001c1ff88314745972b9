@@ -1,0 +1,34 @@
+package co.edu.product.web;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import co.edu.common.DbCommand;
+import co.edu.product.service.ProductService;
+import co.edu.product.serviceImpl.ProductServiceImpl;
+import co.edu.product.vo.ProductVO;
+
+public class pSearch implements DbCommand {
+
+	@Override
+	public String execute(HttpServletRequest request, HttpServletResponse response) {
+		ProductService Dao = new ProductServiceImpl();
+		request.setAttribute("bookList", Dao.selectList());
+		
+		String field = request.getParameter("pSearch");
+		String query = request.getParameter("pSearch");
+		
+		String field = "title";
+		if(field != null)
+			field = field;
+		
+		String query = "";
+		if(query != null)
+			query = query;
+	
+		return "main/detailproduct.tiles";
+	}
+	
+}

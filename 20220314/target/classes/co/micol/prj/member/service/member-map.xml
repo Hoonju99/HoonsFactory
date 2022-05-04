@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="co.micol.prj.member.service.MemberMapper">
+	<select id="selectMemberList"
+		resultType="co.micol.prj.member.service.MemberVO">
+		SELECT * FROM MEMBER
+	</select>
+
+	<select id="selectMember"
+		parameterType="co.micol.prj.member.service.MemberVO"
+		resultType="co.micol.prj.member.service.MemberVO">
+		SELECT * FROM MEMBER WHERE MEMBERID = #{memberId}
+		<if test="password != null">AND PASSWORD = #{memberPassword}</if>
+		<!-- 로그인 기능 -->
+	</select>
+
+	<insert id="insertMember"
+		parameterType="co.micol.prj.member.service.MemberVO">
+		 <selectKey keyProperty="memberNum" resultType="int" order="BEFORE">
+     SELECT NVL(MAX(memberNum+1),1) FROM member
+  </selectKey>
+		INSERT INTO MEMBER
+		(memberNum, memberEmail, memberId, memberPassword, memberName, memberPhone)
+		VALUES
+		(#{memberNum}, #{memberEmail}, #{memberId}, #{memberPassword}, #{memberName}, #{memberPhone})
+	</insert>
+
+	
+
+	<update id="updateMember"
+		parameterType="co.micol.prj.member.service.MemberVO">
+		UPDATE MEMBER
+		<set>
+			<if test="password != null">SET PASSWORD = #{memberPassword},</if>
+			<if test="name != null">SET NAME = #{memberName},</if>
+			<if test="tel != null">SET PHONE = #{memberPassword},</if>
+			<if test="email != null">SET EMAIL = #{memberEmail},</if>
+			<if test="memberGrade != null">SET GRADE = #{memberGrade},</if>
+		</set>
+		WHERE MEMBERID = #{MEMBERID}
+	</update>
+
+	<delete id="deleteMember"
+		parameterType="co.micol.prj.member.service.MemberVO">
+		DELETE FROM MEMBER WHERE ID = #{memberId}
+	</delete>
+
+	<select id="isIdCheck" parameterType="String"
+		resultType="boolean">
+		SELECT CASE WHEN COUNT(MEMBERID) = 1 THEN 0 ELSE 1 END AS
+		MEMBERID
+		FROM MEMBER WHERE MEMBERID = #{str}
+	</select>
+</mapper>

@@ -1,0 +1,11 @@
+package co.edu.product.web;
+
+import java.util.List;
+
+import co.edu.product.vo.ProductVO;
+
+public class BookMapper {
+	public List<ProductVO> getProductList(Criteria cri);
+
+	public int ProdcutGetTotal(Criteria cri);
+}

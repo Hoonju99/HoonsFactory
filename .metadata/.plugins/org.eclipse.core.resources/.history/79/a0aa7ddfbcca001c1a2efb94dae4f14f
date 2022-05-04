@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+<h3>계좌실명 조회</h3>
+<div id="list"></div>
+<script>
+
+var url = "getRealName";
+$.ajax(url)
+.done(function(datas){
+	
+})
+
+
+</script>
+
+</body>
+</html>

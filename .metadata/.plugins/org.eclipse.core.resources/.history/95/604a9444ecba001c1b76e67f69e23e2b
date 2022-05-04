@@ -1,0 +1,46 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+<h3>todo list</h3>
+<input id="title"><butoon id="btn">등록</butoon>
+<div id="list">
+<div id="1">title completed</div>
+</div>
+<script>
+	$("#btn".on("click", function(){
+		
+		
+	})
+	
+	const url = "https://jsonplaceholder.typicode.com/todos"
+	$.ajax(url)
+	.done(function(data){
+		for(todo of data){
+			//div 태그 생성해서 추가
+			let div = $("<div>")
+			div.data("id", data.id).html(todo.title).appendTo($("#list"))
+			
+			/* $("#list").append($("<div>").data('id',todo.id).html(todo.title)) */
+			//completed가 treu 이면 (실행완료) color = red
+			if(todo.completed){
+				div.css("color", "red")
+				
+				
+			}
+			
+			
+		}
+	})
+
+</script>
+
+
+</body>
+</html>

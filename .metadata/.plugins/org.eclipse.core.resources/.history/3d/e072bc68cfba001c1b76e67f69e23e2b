@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.js"
+	integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+	crossorigin="anonymous"></script>
+</head>
+<body>
+	<input id="userid">
+	<input id="username">
+	<input id="sal">
+	<button type="button" id="btn">등록</button>
+	<table>
+		<thead>
+			<tr>
+			<td>이름</td>
+			<td>급여</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr data-userid="101">
+				<td>홍길동</td>
+				<td>1000</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

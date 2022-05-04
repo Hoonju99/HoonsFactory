@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="CounselDAO">
+
+	<!-- 등록 -->
+	<insert id="insert">
+		<selectKey order="BEFORE" keyProperty="no" resultType="int">
+			<!-- select 시퀀스.nextval from dual -->
+			SELECT NVL(MAX(no),0) +1 FROM TBL_COUNSEL
+		</selectKey>
+		INSERT INTO TBL_COUNSEL (NO,employee_id,NAME,COUNSEL_TYPE,DTTM)
+		VALUES ( #{no},	#{employee_id},	#{name},#{counsel_type},#{dttm})
+
+	</insert>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+

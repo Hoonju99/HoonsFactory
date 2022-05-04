@@ -1,0 +1,66 @@
+package com.dev.serviceImpl;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.dev.common.DAO;
+import com.dev.service.GoodService;
+import com.dev.vo.GoodVO;
+
+// GoodService를 구현하는 클래스. 
+public class GoodServiceImpl extends DAO implements GoodService {
+	private PreparedStatement psmt;
+	private ResultSet rs;
+
+	@Override
+	public List<GoodVO> selectList() {
+		List<GoodVO> list = new ArrayList<>();
+	      GoodVO vo;
+	      String sql = "SELECT *\r\n"
+	      		+ "from goods;";
+	      try {
+	         psmt = conn.prepareStatement(sql);
+	         rs = psmt.executeQuery();
+	         while(rs.next()) {
+	            vo = new GoodVO();
+	            vo.setProdCode(rs.getString("prodCode"));
+	            vo.setProdName(rs.getString("prodName"));
+	            vo.setProdDesc(rs.getString("prodDesc"));
+	            vo.setProdImage(rs.getString("prodImage"));
+	            vo.setProdPrice(rs.getString("prodPrice"));
+	            vo.setSalePrice(rs.getString("salePrice"));
+	            vo.setLikeIt(rs.getString("likeIt"));
+	            list.add(vo);
+	         }
+	      }catch(SQLException e) {
+	         e.printStackTrace();
+	      }finally {
+	         close();
+	      }
+	      return list; 	}
+
+
+	
+	
+	
+	
+	
+	
+	
+	private void close() {
+		try {
+			if (rs != null)
+				rs.close();
+			if (psmt != null)
+				psmt.close();
+			if (conn != null)
+				conn.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+}
+

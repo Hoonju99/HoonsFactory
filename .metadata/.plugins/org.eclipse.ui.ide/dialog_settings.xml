@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="com.springsource.sts.wizard.template"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.springframework.ide.eclipse.beans.ui.wizards.category"/>
+			<item value="org.springsource.ide.eclipse.boot.wizards.category"/>
+		</list>
+	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\DEV\workspace\aop"/>
+			<item value="C:\DEV\workspace\jquery"/>
+			<item value="C:\DEV\workspace\myserver"/>
+			<item value="C:\DEV\workspace\2022040711"/>
+			<item value="C:\DEV\workspace\20220408"/>
+			<item value="C:\Users\admin\Desktop\202204071"/>
+			<item value="C:\Users\admin\Desktop\TESTPrj"/>
+			<item value="C:\Users\admin\Desktop\20220406.zip"/>
+			<item value="C:\DEV\workspace\20220405"/>
+			<item value="C:\Users\admin\Desktop\20220314.zip"/>
+			<item value="C:\Users\admin\Desktop\backup.zip"/>
+			<item value="C:\DEV\workspace\PersonalProject.zip"/>
+			<item value="C:\DEV\workspace\20220314"/>
+			<item value="C:\Users\admin\Desktop\ShoppingMall (1)"/>
+			<item value="C:\Users\admin\git"/>
+			<item value="C:\DEV\zamTemp"/>
+			<item value="C:\DEV\workspace\tilesTemplate"/>
+			<item value="C:\Users\admin\git\NewProject"/>
+			<item value="C:\DEV\NewProject"/>
+			<item value="C:\DEV\NewProject.zip"/>
+			<item value="C:\Users\admin\Desktop\NewProject.zip"/>
+			<item value="C:\Users\admin\Desktop\tiles.zip"/>
+			<item value="C:\Users\admin\Desktop\20220224"/>
+			<item value="C:\DEV\workspace"/>
+			<item value="C:\Users\admin\git\A\chapter04"/>
+			<item value="C:\Users\admin\git\seonghun"/>
+		</list>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\DEV\workspace"/>
+			<item value="C:\DEV\20220314"/>
+			<item value="C:\DEV\workspace\Servers"/>
+			<item value=""/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+			<item value="C:\Users\admin\Desktop\20220314.zip"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode/&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
+		<item key="ShowDerived" value="false"/>
+		<item key="FilterByLocation" value="false"/>
+		<item key="WorkingSet" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="668"/>
+			<item key="DIALOG_Y_ORIGIN" value="195"/>
+			<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+		</section>
+	</section>
+</section>
